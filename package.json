@@ -1,13 +1,24 @@
 {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
     "leaflet": "^1.9.4",
+    "next": "latest",
     "papaparse": "^5.5.3",
     "pg": "^8.16.0",
+    "react": "latest",
+    "react-dom": "latest",
     "react-leaflet": "^5.0.0"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.18",
-    "@types/papaparse": "^5.3.16"
+    "@types/papaparse": "^5.3.16",
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
   }
 }
