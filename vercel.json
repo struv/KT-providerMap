@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
+  "buildCommand": "cd provider-clinic-map && npm run build",
+  "installCommand": "cd provider-clinic-map && npm install",
   "framework": "nextjs",
   "builds": [
     {
-      "src": "package.json",
+      "src": "provider-clinic-map/package.json",
       "use": "@vercel/next"
     }
   ]
