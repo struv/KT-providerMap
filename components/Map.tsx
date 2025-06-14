@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import { MapState } from '../types';
-import 'leaflet/dist/leaflet.css';
+import styles from './Map.module.css';
 
 interface MapProps {
   mapState: MapState;
@@ -29,7 +29,7 @@ export default function Map({ mapState, onMapStateChange }: MapProps) {
     <MapContainer
       center={mapState.center}
       zoom={mapState.zoom}
-      style={{ height: 'calc(100vh - 64px)', width: '100%' }}
+      className={styles.mapContainer}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
