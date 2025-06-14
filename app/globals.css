@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+/* Custom map container styles */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 640px) {
+  .leaflet-container {
+    height: calc(100vh - 64px);
+  }
+}
+
+@media (min-width: 641px) {
+  .leaflet-container {
+    height: calc(100vh - 64px);
+  }
+} 
